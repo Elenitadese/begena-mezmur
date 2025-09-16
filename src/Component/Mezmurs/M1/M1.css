@@ -1,0 +1,58 @@
+/* Mezmur1.css */
+
+/* Page background */
+.mezmur-page {
+  
+  padding: 30px;
+  background: linear-gradient(135deg, #e2d1f9 0%, #d9efff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+}
+
+/* Title */
+.mezmur-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Columns container */
+.mezmur-columns {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Each column */
+.mezmur-column {
+  flex: 1;
+  background-color: rgba(128, 0, 128, 0.85);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  white-space: pre-line;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Numbers box */
+.mezmur-numbers {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-self: flex-end;
+}
+
+/* Mobile (stack vertically) */
+@media (max-width: 768px) {
+  .mezmur-columns {
+    flex-direction: column; /* one on top of another */
+  }
+}

@@ -1,0 +1,22 @@
+/* Ensure the grid system works */
+.allVideosWrapper .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* On large screens (992px and up), set videos to 3 per row */
+@media (min-width: 992px) {
+  .allVideosWrapper .col-lg-4 {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
+  }
+}
+
+/* On medium screens (768px and up), set videos to 2 per row */
+@media (min-width: 768px) {
+  .allVideosWrapper .col-md-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
